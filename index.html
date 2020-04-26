@@ -22,8 +22,28 @@
     width: 150px;
     margin: 0 8px 0 25px;
   }
+  #main :nth-child(1) {
+      transform: translateY(-66px);
+  }
+  #main :nth-child(2) {
+      transform: translateY(66px);
+  }
+  
+  #main :nth-child(3) {
+      transform: translateX(99px);
+  }
+
+
+  #main img{
+      animation: animate 1.5s forwards;
+  }
+  @keyframes animate {
+      to {
+          transform: translate(0);
+      }
+  }
 </style>
-<body class="center-center">
+<body class="center-center" id="main">
       #fullstack
       <img class="tek-stack" src="https://static.djangoproject.com/img/logos/django-logo-positive.svg" alt="django"/>
       <img class="tek-stack" src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt="python"/>
